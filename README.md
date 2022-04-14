@@ -34,7 +34,7 @@ Please cite our paper(s) if you find the VocalSound dataset and code useful. The
 
 ##Download VocalSound
 
-##Dataset-Details
+##Dataset Details
   
 ## Baseline-Experiment
 
