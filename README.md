@@ -108,12 +108,13 @@ We provide an extremely simply, one-click, Google Colab script for the baseline 
 - *Make sure GPU is enabled for Colab.* To do so, go to the top menu of the page > Edit > Notebook settings or Runtime>Change runtime type and select GPU as Hardware accelerator.
 - *Run the script.* Just press ctrl+F9 or go to runtime menu on top and click run all option and all cells run at a time.
 
-### Option 2. Local Experiment
+### Option 2. Run Experiment Locally
 
 We also provide a recipe for local experiments. 
 
-Compared with the Google Colab Online script, it has following advantages:
-- It can be much faster than Google Colab (free version) if you have 
+Compared with the Google Colab online script, it has following advantages:
+- It can be faster and more stable than online Google Colab (free version) if you have fast GPUs.
+- It is basiclly the original code we used for our paper, so it should reproduce the exact numbers in the paper.
 
 Step 1. Clone or download this repository and set it as the working directory, create a virtual environment and install the dependencies.
 
@@ -126,8 +127,8 @@ pip install -r requirements.txt
   
 Step 2. Download the VocalSound dataset and process it.
 
-```python
-
+```
+cd data
 
 ```
 

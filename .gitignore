@@ -3,3 +3,4 @@ data/*
 *.wav
 *.zip
 *.csv
+venv-vs/*
