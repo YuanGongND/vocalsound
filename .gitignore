@@ -1,2 +1,5 @@
 data/*
 .idea/*
+*.wav
+*.zip
+*.csv

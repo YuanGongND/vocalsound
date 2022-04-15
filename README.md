@@ -34,19 +34,73 @@ Please cite our paper(s) if you find the VocalSound dataset and code useful. The
 
 ##Download VocalSound
 
+The VocalSound dataset can be downloaded as a single .zip file:
+
+[**VocalSound 44.1kHz Version** (4.5 GB)](link)
+
+[**VocalSound 16kHz Version** (1.7 GB, used in our baseline experiment)](link)
+
+If you plan to reproduce our baseline experiments, you do **NOT** need to download it manually, our script will download and process the 16kHz version automatically.
+
 ##Dataset Details
+
+```
+data
+├──readme.txt
+├──class_labels_indices_vs.csv # include label code and name information
+├──audio_16k
+│  ├──f0003_0_cough.wav # female speaker, id=0003, 0=first collection (most spks only record once, but there are exceptions), cough
+│  ├──f0003_0_laughter.wav
+│  ├──f0003_0_sigh.wav
+│  ├──f0003_0_sneeze.wav
+│  ├──f0003_0_sniff.wav
+│  ├──f0003_0_throatclearing.wav
+│  ├──f0004_0_cough.wav # data from another female speaker 0004
+│   ... (21024 files in total)
+│   
+├──audio_44k
+│    # same recordings with those in data/data_16k, but are no downsampled
+│   ├──f0003_0_cough.wav
+│    ... (21024 files in total)
+│
+├──datafiles  # json datafiles that we use in our baseline experiment, you can ignore it if you don't use our training pipeline
+│  ├──all.json  # all data
+│  ├──te.json  # test data
+│  ├──tr.json  # training data
+│  ├──val.json  # validation data
+│  └──subtest # subset of the test set, for fine-grained evaluation
+│     ├──te_age1.json  # age [18-25]
+│     ├──te_age2.json  # age [26-48]
+│     ├──te_age3.json  # age [49-80]
+│     ├──te_female.json
+│     └──te_male.json
+│
+└──meta  # Meta information of the speakers [spk_id, gender, age, country, native language, health condition (no=no problem)]
+   ├──all_meta.json  # all data
+   ├──te_meta.json  # test data
+   ├──tr_meta.json  # training data
+   └──val_meta.json  # validation data
+```
   
-## Baseline-Experiment
+## Baseline Experiment
 
 Step 1. Clone or download this repository and set it as the working directory, create a virtual environment and install the dependencies.
 
 ```
-cd ast/ 
-python3 -m venv venvast
-source venvast/bin/activate
+cd vocalsound/ 
+python3 -m venv venv-vs
+source venv-vs/bin/activate
 pip install -r requirements.txt 
 ```
   
+Step 2. Download the VocalSound dataset and process it.
+
+```python
+
+
+```
+
+
 Step 2. Test the AST model.
 
 ```python
