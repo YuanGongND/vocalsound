@@ -59,7 +59,7 @@ def train(audio_model, train_loader, test_loader, args):
         audio_model.train()
         print(datetime.datetime.now())
 
-        for i, (audio_input, nframes, labels, _) in enumerate(train_loader):
+        for i, (audio_input, labels) in enumerate(train_loader):
             # measure data loading time
             B = audio_input.size(0)
             audio_input = audio_input.to(device, non_blocking=True)
@@ -122,8 +122,8 @@ def train(audio_model, train_loader, test_loader, args):
         average_precision = np.mean(middle_ps)
         average_recall = np.mean(middle_rs)
 
-        print("mAP: {:.6f}".format(mAP))
         print("ACC: {:.6f}".format(acc))
+        print("mAP: {:.6f}".format(mAP))
         print("AUC: {:.6f}".format(mAUC))
         print("Avg Precision: {:.6f}".format(average_precision))
         print("Avg Recall: {:.6f}".format(average_recall))

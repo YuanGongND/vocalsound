@@ -97,19 +97,15 @@ class VSDataset(Dataset):
 
         p = target_length - n_frames
 
-        # cut and pad to make
+        # cut and pad
         if p > 0:
             m = torch.nn.ZeroPad2d((0, 0, 0, p))
             fbank = m(fbank)
         elif p < 0:
             fbank = fbank[0:target_length, :]
 
-        # this is to avoid empty file, and let the code run even in this case
-        if n_frames <= 50:
-            n_frames = 50
-
         if filename2 == None:
-            return fbank,
+            return fbank
         else:
             return fbank, mix_lambda
 

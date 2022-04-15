@@ -36,6 +36,7 @@ parser.add_argument("--n-print-steps", type=int, default=1, help="number of step
 # models args
 parser.add_argument("--n_class", type=int, default=17, help="number of classes")
 parser.add_argument('--save_model', help='save the models or not', type=ast.literal_eval)
+parser.add_argument("--model", type=str, default='eff_mean', help="model")
 parser.add_argument("--model_size", type=int, default=0, help="model size")
 parser.add_argument('--imagenet_pretrain', help='if use pretrained imagenet efficient net', type=ast.literal_eval, default='True')
 parser.add_argument('--freqm', help='frequency mask max length', type=int, default=0)

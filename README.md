@@ -42,7 +42,7 @@ The VocalSound dataset can be downloaded as a single .zip file:
 
 If you plan to reproduce our baseline experiments, you do **NOT** need to download it manually, our script will download and process the 16kHz version automatically.
 
-##Dataset Details
+## Dataset Details
 
 ```
 data
@@ -83,6 +83,37 @@ data
 ```
   
 ## Baseline Experiment
+
+### Option 1. One-Click Google Colab Experiment
+
+We provide an extremely simply, one-click, Google Colab script for the baseline experiment.
+
+**What you need:** 
+- A Free Google Account with Google Drive Free Space > 3Gb
+  - A (paid) Google Colab Pro plan could speech up training, but is not necessary. Free version can run the script, just a bit slower.
+
+**What you don't need:** 
+- Download VocalSound Manually (The Colab script download it to your Google Drive automatically)
+- GPU or Any Other Hardware (Google Colab provides free GPUs)
+- Any Enviroment Setting and Package Installation (Google Colab provides a ready-to-use environment)
+- An specific OS (You only need a web browser, e.g., Chrome)
+
+**Please Note**
+- This script is slightly different with our local code, but the performance is not impacted.
+- Free Google Colab might be slow and unstable. In our test, it takes ~5 minutes to train the model for one epoch with a free Colab account.
+
+#### To run the baseline experiment
+
+- *Make sure your Google Drive is mounted.* You don't need to do it by yourself, but Google Colab will ask permission to acess your Google Drive when you run the scrip, please allow it if you want to use Google Drive.
+- *Make sure GPU is enabled for Colab.* To do so, go to the top menu of the page > Edit > Notebook settings or Runtime>Change runtime type and select GPU as Hardware accelerator.
+- *Run the script.* Just press ctrl+F9 or go to runtime menu on top and click run all option and all cells run at a time.
+
+### Option 2. Local Experiment
+
+We also provide a recipe for local experiments. 
+
+Compared with the Google Colab Online script, it has following advantages:
+- It can be much faster than Google Colab (free version) if you have 
 
 Step 1. Clone or download this repository and set it as the working directory, create a virtual environment and install the dependencies.
 
