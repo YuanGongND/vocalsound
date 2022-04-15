@@ -32,7 +32,7 @@ Please cite our paper(s) if you find the VocalSound dataset and code useful. The
 }
 ```  
 
-##Download VocalSound
+## Download VocalSound
 
 The VocalSound dataset can be downloaded as a single .zip file:
 
@@ -40,7 +40,7 @@ The VocalSound dataset can be downloaded as a single .zip file:
 
 [**VocalSound 16kHz Version** (1.7 GB, used in our baseline experiment)](link)
 
-If you plan to reproduce our baseline experiments, you do **NOT** need to download it manually, our script will download and process the 16kHz version automatically.
+If you plan to reproduce our baseline experiments using our *Google Colab* script, you do **NOT** need to download it manually, our script will download and process the 16kHz version automatically.
 
 ## Dataset Details
 
