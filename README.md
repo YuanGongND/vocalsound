@@ -86,9 +86,9 @@ data
   
 ## Baseline Experiment
 
-### Option 1. One-Click Google Colab Experiment
+### Option 1. One-Click Google Colab Experiment [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YuanGongND/vocalsound/blob/main/colab/VocalSound.ipynb)
 
-We provide an extremely simple one-click *Google Colab* script [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YuanGongND/vocalsound/blob/main/colab/VocalSound.ipynb) for the baseline experiment.
+We provide an extremely simple one-click *Google Colab* script for the baseline experiment.
 
 **What you need:** 
 - A free google account with Google Drive free space > 5Gb
