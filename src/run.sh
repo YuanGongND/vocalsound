@@ -26,7 +26,7 @@ mixup=0
 batch_size=100
 
 data_dir=../data
-exp_dir=../exp/vocalsound-${model}-${model_size}-im${imagenet_pretrain}-${lr}-${freqm}-${timem}-${mixup}
+exp_dir=../exp/vocalsound-${model}-${model_size}-im${imagenet_pretrain}-${lr}-${freqm}-${timem}-${mixup}-r1
 mkdir -p exp_dir
 
 CUDA_CACHE_DISABLE=1 python run.py --lr $lr --b $batch_size --n_class 6 --n-epochs 30 \

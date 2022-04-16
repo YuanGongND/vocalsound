@@ -110,4 +110,4 @@ for idx, cur_eval in enumerate(data_eval_list):
 
 all_res = np.array(all_res)
 all_res = all_res.reshape([1, all_res.shape[0]])
-np.savetxt(args.exp_dir + '/all_eval_result.csv', all_res, header=['validation'] + eval_name_list)
+np.savetxt(args.exp_dir + '/all_eval_result.csv', all_res, header=','.join(['validation'] + eval_name_list))
