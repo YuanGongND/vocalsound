@@ -152,7 +152,7 @@ chmod 777 run.sh
 
 We test both options before this release, you should get similar accuracies.
 
-|        Accuracy (%)       |       Colab Script [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YuanGongND/vocalsound/blob/main/colab/VocalSound.ipynb)      |    Local Script   |    ICASSP Paper   |
+|        Accuracy (%)       |       Colab Script [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YuanGongND/vocalsound/blob/main/colab/VocalSound.ipynb)      |    [Local Script](https://github.com/YuanGongND/vocalsound/tree/main/src)   |    ICASSP Paper   |
 |:-------------------------:|:------------------------:|:-----------------:|:-----------------:|
 |       Validation Set      |         91.1             |        90.2       |      90.1±0.2     |
 |        All Test Set       |         91.6             |        90.6       |      90.5±0.2     |
