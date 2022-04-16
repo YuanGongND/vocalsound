@@ -10,7 +10,7 @@
 
 **VocalSound** dataset consists of over *21,000* crowdsourced recordings of **laughter, sighs, coughs, throat clearing, sneezes, and sniffs** from *3,365* unique subjects. The VocalSound dataset also contains meta information such as **speaker age, gender, native language, country, and health condition**.
 
-This repository contains the official code of the data preparation and baseline experiment in the ICASSP paper [VocalSound: A Dataset for Improving Human Vocal Sounds Recognition](https://arxiv.org/abs/dummy) (Yuan Gong, Jin Yu, and James Glass; MIT & Signify). Specifically, we provide an **extremely simple one-click** *Google Colab* script [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/YuanGongND/vocalsound/blob/main/colab/VocalSound.ipynb) for the baseline experiment, no GPU is needed.
+This repository contains the official code of the data preparation and baseline experiment in the ICASSP paper [VocalSound: A Dataset for Improving Human Vocal Sounds Recognition](https://arxiv.org/abs/dummy) (Yuan Gong, Jin Yu, and James Glass; MIT & Signify). Specifically, we provide an **extremely simple one-click** *Google Colab* script [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YuanGongND/vocalsound/blob/main/colab/VocalSound.ipynb) for the baseline experiment, no GPU is needed.
 
 
 
@@ -88,7 +88,7 @@ data
 
 ### Option 1. One-Click Google Colab Experiment
 
-We provide an extremely simple one-click *Google Colab* script [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/YuanGongND/vocalsound/blob/main/colab/VocalSound.ipynb) for the baseline experiment.
+We provide an extremely simple one-click *Google Colab* script [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YuanGongND/vocalsound/blob/main/colab/VocalSound.ipynb) for the baseline experiment.
 
 **What you need:** 
 - A free google account with Google Drive free space > 5Gb
@@ -152,7 +152,7 @@ chmod 777 run.sh
 
 We test both options before this release, you should get similar accuracies.
 
-|                           |       Colab Script [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/YuanGongND/vocalsound/blob/main/colab/VocalSound.ipynb)      |    Local Script   |    ICASSP Paper   |
+|                           |       Colab Script [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YuanGongND/vocalsound/blob/main/colab/VocalSound.ipynb)      |    Local Script   |    ICASSP Paper   |
 |:-------------------------:|:------------------------:|:-----------------:|:-----------------:|
 |       Validation Set      |         91.1             |        90.2       |      90.1±0.2     |
 |        All Test Set       |         91.6             |        90.6       |      90.5±0.2     |
