@@ -10,7 +10,9 @@
 
 **VocalSound** dataset consists of over *21,000* crowdsourced recordings of **laughter, sighs, coughs, throat clearing, sneezes, and sniffs** from *3,365* unique subjects. The VocalSound dataset also contains meta information such as **speaker age, gender, native language, country, and health condition**.
 
-This repository contains the official code of the data preparation and baseline experiment in the ICASSP paper [VocalSound: A Dataset for Improving Human Vocal Sounds Recognition](https://arxiv.org/abs/dummy) (Yuan Gong, Jin Yu, and James Glass; MIT & Signify). Specifically, we provide an **extremely simple one-click** *Google Colab* script for the baseline experiment, no GPU is needed.
+This repository contains the official code of the data preparation and baseline experiment in the ICASSP paper [VocalSound: A Dataset for Improving Human Vocal Sounds Recognition](https://arxiv.org/abs/dummy) (Yuan Gong, Jin Yu, and James Glass; MIT & Signify). Specifically, we provide an **extremely simple one-click** *Google Colab* script [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/YuanGongND/vocalsound/blob/main/colab/VocalSound.ipynb) for the baseline experiment, no GPU is needed.
+
+
 
 ## Citing  
 Please cite our paper(s) if you find the VocalSound dataset and code useful. The first paper proposes introduces the VocalSound dataset and the second paper describes the training pipeline and model we used for the baseline experiment.   
@@ -86,7 +88,7 @@ data
 
 ### Option 1. One-Click Google Colab Experiment
 
-We provide an extremely simple one-click *Google Colab* script for the baseline experiment.
+We provide an extremely simple one-click *Google Colab* script [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/YuanGongND/vocalsound/blob/main/colab/VocalSound.ipynb) for the baseline experiment.
 
 **What you need:** 
 - A free google account with Google Drive free space > 5Gb
@@ -148,17 +150,17 @@ chmod 777 run.sh
 #sbatch run.sh
 ```
 
-We test both options before this release, you should get similar results.
+We test both options before this release, you should get similar accuracies.
 
-|                           |       Colab Script       |    Local Script   |    ICASSP Paper   |
+|                           |       Colab Script [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/YuanGongND/vocalsound/blob/main/colab/VocalSound.ipynb)      |    Local Script   |    ICASSP Paper   |
 |:-------------------------:|:------------------------:|:-----------------:|:-----------------:|
-|       Validation Set      |                          |        90.2       |      90.1±0.2     |
-|        All Test Set       |                          |        90.6       |      90.5±0.2     |
-|       Test Age 18-25      |                          |        92.3       |      91.5±0.3     |
-|       Test Age 26-48      |                          |        90.0       |      90.1±0.2     |
-|       Test Age 49-80      |                          |        90.2       |      90.9±1.6     |
-|         Test Male         |                          |        89.6       |      89.2±0.5     |
-|        Test Female        |                          |        91.6       |      91.9±0.1     |
+|       Validation Set      |         91.1             |        90.2       |      90.1±0.2     |
+|        All Test Set       |         91.6             |        90.6       |      90.5±0.2     |
+|       Test Age 18-25      |         93.4             |        92.3       |      91.5±0.3     |
+|       Test Age 26-48      |         90.8             |        90.0       |      90.1±0.2     |
+|       Test Age 49-80      |         92.2             |        90.2       |      90.9±1.6     |
+|         Test Male         |         89.8             |        89.6       |      89.2±0.5     |
+|        Test Female        |         93.4             |        91.6       |      91.9±0.1     |
 |    Model Implementation   | Torchvision EfficientNet | PSLA EfficientNet | PSLA EfficientNet |
 |         Batch Size        |            80            |        100        |        100        |
 |            GPU            |     Google Colab Free    |      4X Titan     |      4X Titan     |
