@@ -89,14 +89,14 @@ data
 We provide an extremely simple one-click *Google Colab* script for the baseline experiment.
 
 **What you need:** 
-- A free google account with Google Drive free space > 3Gb
-  - A (paid) Google Colab Pro plan could speech up training, but is not necessary. Free version can run the script, just a bit slower.
+- A free google account with Google Drive free space > 5Gb
+  - A (paid) Google Colab Pro plan could speed up training, but is not necessary. Free version can run the script, just a bit slower.
 
 **What you don't need:** 
 - Download VocalSound manually (The Colab script download it to your Google Drive automatically)
 - GPU or any other hardware (Google Colab provides free GPUs)
 - Any enviroment setting and package installation (Google Colab provides a ready-to-use environment)
-- An specific operating system (You only need a web browser, e.g., Chrome)
+- A specific operating system (You only need a web browser, e.g., Chrome)
 
 **Please Note**
 - This script is slightly different with our local code, but the performance is not impacted.
@@ -104,9 +104,9 @@ We provide an extremely simple one-click *Google Colab* script for the baseline 
 
 #### To run the baseline experiment
 
-- *Make sure your Google Drive is mounted.* You don't need to do it by yourself, but Google Colab will ask permission to acess your Google Drive when you run the scrip, please allow it if you want to use Google Drive.
-- *Make sure GPU is enabled for Colab.* To do so, go to the top menu of the page > Edit > Notebook settings and select GPU as Hardware accelerator.
-- *Run the script.* Just press ctrl+F9 or go to runtime menu on top and click run all option. That's it.
+- *Make sure your Google Drive is mounted.* You don't need to do it by yourself, but Google Colab will ask permission to acess your Google Drive when you run the script, please allow it if you want to use Google Drive.
+- *Make sure GPU is enabled for Colab.* To do so, go to the top menu > Edit > Notebook settings and select GPU as Hardware accelerator.
+- *Run the script.* Just press Ctrl+F9 or go to runtime menu on top and click "run all" option. That's it.
 
 ### Option 2. Run Experiment Locally
 
@@ -114,7 +114,7 @@ We also provide a recipe for local experiments.
 
 Compared with the Google Colab online script, it has following advantages:
 - It can be faster and more stable than online Google Colab (free version) if you have fast GPUs.
-- It is basiclly the original code we used for our paper, so it should reproduce the exact numbers in the paper.
+- It is basically the original code we used for our paper, so it should reproduce the exact numbers in the paper.
 
 **Step 1.** Clone or download this repository and set it as the working directory, create a virtual environment and install the dependencies.
 
