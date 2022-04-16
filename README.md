@@ -161,7 +161,7 @@ We test both options before this release, you should get similar accuracies.
 |       Test Age 49-80      |         92.2             |        90.2       |      90.9±1.6     |
 |         Test Male         |         89.8             |        89.6       |      89.2±0.5     |
 |        Test Female        |         93.4             |        91.6       |      91.9±0.1     |
-|    Model Implementation   | Torchvision EfficientNet | PSLA EfficientNet | PSLA EfficientNet |
+|    Model Implementation   | torchvision EfficientNet | PSLA EfficientNet | PSLA EfficientNet |
 |         Batch Size        |            80            |        100        |        100        |
 |            GPU            |     Google Colab Free    |      4X Titan     |      4X Titan     |
 | Training Time (30 Epochs) |        ~2.5 Hours        |      ~1 Hour      |      ~1 Hour      |
