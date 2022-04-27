@@ -5,3 +5,6 @@ data/*
 *.csv
 venv-vs/*
 *.DS_Store
+*.pptx
+*.jpeg
+*.mp4
