@@ -12,19 +12,20 @@
 
 **VocalSound** is a **free** dataset consisting of *21,024* crowdsourced recordings of **laughter, sighs, coughs, throat clearing, sneezes, and sniffs** from *3,365* unique subjects. The VocalSound dataset also contains meta information such as **speaker age, gender, native language, country, and health condition**.
 
-This repository contains the official code of the data preparation and baseline experiment in the ICASSP paper [VocalSound: A Dataset for Improving Human Vocal Sounds Recognition](https://arxiv.org/abs/dummy) (Yuan Gong, Jin Yu, and James Glass; MIT & Signify). Specifically, we provide an **extremely simple one-click** *Google Colab* script [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YuanGongND/vocalsound/blob/main/colab/VocalSound.ipynb) for the baseline experiment, no GPU is needed.
+This repository contains the official code of the data preparation and baseline experiment in the ICASSP paper [VocalSound: A Dataset for Improving Human Vocal Sounds Recognition](https://ieeexplore.ieee.org/document/9746828) (Yuan Gong, Jin Yu, and James Glass; MIT & Signify). Specifically, we provide an **extremely simple one-click** *Google Colab* script [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YuanGongND/vocalsound/blob/main/colab/VocalSound.ipynb) for the baseline experiment, no GPU is needed.
 
 
 
 ## Citing  
 Please cite our paper(s) if you find the VocalSound dataset and code useful. The first paper proposes introduces the VocalSound dataset and the second paper describes the training pipeline and model we used for the baseline experiment.   
 ```
-@inproceedings{gong2022vocalsound,  
+@INPROCEEDINGS{9746828,
   author={Gong, Yuan and Yu, Jin and Glass, James},
-  title={VOCALSOUND: A DATASET FOR IMPROVING HUMAN VOCAL SOUNDS RECOGNITION},
-  booktitle={ICASSP},
-  year={2022}
-}
+  booktitle={ICASSP 2022 - 2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
+  title={Vocalsound: A Dataset for Improving Human Vocal Sounds Recognition}, 
+  year={2022},
+  pages={151-155},
+  doi={10.1109/ICASSP43922.2022.9746828}}
 ```
 ```  
 @ARTICLE{gong_psla, 
