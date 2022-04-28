@@ -19,7 +19,7 @@ This repository contains the official code of the data preparation and baseline 
 ## Citing  
 Please cite our paper(s) if you find the VocalSound dataset and code useful. The first paper proposes introduces the VocalSound dataset and the second paper describes the training pipeline and model we used for the baseline experiment.   
 ```
-@INPROCEEDINGS{9746828,
+@INPROCEEDINGS{gong_vocalsound,
   author={Gong, Yuan and Yu, Jin and Glass, James},
   booktitle={ICASSP 2022 - 2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
   title={Vocalsound: A Dataset for Improving Human Vocal Sounds Recognition}, 
