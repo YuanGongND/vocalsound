@@ -41,9 +41,9 @@ Please cite our paper(s) if you find the VocalSound dataset and code useful. The
 
 The VocalSound dataset can be downloaded as a single .zip file:
 
-[**VocalSound 44.1kHz Version** (4.5 GB)](link)
+[**VocalSound 44.1kHz Version** (4.5 GB)](https://www.dropbox.com/s/xxw3k9wmexms5s5/vs_release_44k.zip?dl=1)
 
-[**VocalSound 16kHz Version** (1.7 GB, used in our baseline experiment)](link)
+[**VocalSound 16kHz Version** (1.7 GB, used in our baseline experiment)](https://www.dropbox.com/s/fuld3z222j9t1oy/vs_release_16k.zip?dl=1)
 
 If you plan to reproduce our baseline experiments using our *Google Colab* script, you do **NOT** need to download it manually, our script will download and process the 16kHz version automatically.
 
