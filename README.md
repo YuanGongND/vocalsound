@@ -12,7 +12,7 @@
 
 **VocalSound** is a **free** dataset consisting of *21,024* crowdsourced recordings of **laughter, sighs, coughs, throat clearing, sneezes, and sniffs** from *3,365* unique subjects. The VocalSound dataset also contains meta information such as **speaker age, gender, native language, country, and health condition**.
 
-This repository contains the official code of the data preparation and baseline experiment in the ICASSP paper [VocalSound: A Dataset for Improving Human Vocal Sounds Recognition](https://ieeexplore.ieee.org/document/9746828) (Yuan Gong, Jin Yu, and James Glass; MIT & Signify). Specifically, we provide an **extremely simple one-click** *Google Colab* script [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YuanGongND/vocalsound/blob/main/colab/VocalSound.ipynb) for the baseline experiment, no GPU is needed.
+This repository contains the official code of the data preparation and baseline experiment in the ICASSP paper [VocalSound: A Dataset for Improving Human Vocal Sounds Recognition](https://ieeexplore.ieee.org/document/9746828) (Yuan Gong, Jin Yu, and James Glass; MIT & Signify). Specifically, we provide an **extremely simple one-click** *Google Colab* script [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YuanGongND/vocalsound/blob/main/colab/VocalSound.ipynb) for the baseline experiment, no GPU / local data downloading is needed.
 
 The dataset is ideal for:
 
@@ -47,7 +47,7 @@ Please cite our paper(s) if you find the VocalSound dataset and code useful. The
 
 The VocalSound dataset can be downloaded as a single .zip file:
 
-[**Sample Recordings** (Listen to it before downloading)](https://drive.google.com/drive/folders/1NGdHO34aTcBY2pFZHoHZKAcfepYV9Wnf?usp=sharing)
+[**Sample Recordings** (Listen to it without downloading)](https://drive.google.com/drive/folders/1NGdHO34aTcBY2pFZHoHZKAcfepYV9Wnf?usp=sharing)
 
 [**VocalSound 44.1kHz Version** (4.5 GB)](https://www.dropbox.com/s/xxw3k9wmexms5s5/vs_release_44k.zip?dl=1)
 
