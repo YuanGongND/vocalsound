@@ -18,7 +18,7 @@ The dataset is ideal for:
 
 - Build vocal sound recognizer.
 - Research on removing model bias on various speaker groups.
-- Evaluate pretrained models (e.g., those trained with AudioSet) on vocal sound classification.
+- Evaluate pretrained models (e.g., those trained with AudioSet) on vocal sound classification to check their generalization ability.
 - Combine with existing large-scale general audio dataset to improve the vocal sound recognition performance.
 
 
