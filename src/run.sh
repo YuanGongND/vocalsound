@@ -31,6 +31,6 @@ mkdir -p exp_dir
 
 CUDA_CACHE_DISABLE=1 python run.py --lr $lr --b $batch_size --n_class 6 --n-epochs 30 \
 --freqm $freqm --timem $timem --mixup ${mixup} \
---data-train ${data_dir}/datafiles/tr.json --data-val ${data_dir}/datafiles/val.json --label-csv ${data_dir}/class_labels_indices.csv --exp-dir $exp_dir \
+--data-train ${data_dir}/datafiles/tr.json --data-val ${data_dir}/datafiles/val.json --label-csv ${data_dir}/class_labels_indices_vs.csv --exp-dir $exp_dir \
 --model ${model} --model_size ${model_size} --imagenet_pretrain ${imagenet_pretrain} --save_model True \
 --n-print-steps 100 --num-workers 8

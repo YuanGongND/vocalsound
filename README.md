@@ -49,11 +49,15 @@ The VocalSound dataset can be downloaded as a single .zip file:
 
 [**Sample Recordings** (Listen to it without downloading)](https://drive.google.com/drive/folders/1NGdHO34aTcBY2pFZHoHZKAcfepYV9Wnf?usp=sharing)
 
-[**VocalSound 44.1kHz Version** (4.5 GB)](https://www.dropbox.com/s/xxw3k9wmexms5s5/vs_release_44k.zip?dl=1)
+[**VocalSound 44.1kHz Version** (4.5 GB)](https://www.dropbox.com/s/mmm1afthu1m8243/vs_release_44.1k.zip?dl=1)
 
-[**VocalSound 16kHz Version** (1.7 GB, used in our baseline experiment)](https://www.dropbox.com/s/fuld3z222j9t1oy/vs_release_16k.zip?dl=1)
+[**VocalSound 16kHz Version** (1.7 GB, used in our baseline experiment)](https://www.dropbox.com/s/7saoz9lf08cmoco/vs_release_16k.zip?dl=1)
+
+(Mirror Links) 腾讯微云下载链接: [试听24个样本](https://share.weiyun.com/31910dkK) ｜[16kHz版本](https://share.weiyun.com/v628d7iq) ｜[44.1kHz版本](https://share.weiyun.com/ozPtjjSh)
 
 If you plan to reproduce our baseline experiments using our *Google Colab* script, you do **NOT** need to download it manually, our script will download and process the 16kHz version automatically.
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />The VocalSound dataset is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 
 ## Dataset Details
 
@@ -142,7 +146,7 @@ pip install -r requirements.txt
 
 ```
 cd data/
-wget https://www.dropbox.com/s/fuld3z222j9t1oy/vs_release_16k.zip?dl=0 -O vs_release_16k.zip
+wget https://www.dropbox.com/s/7saoz9lf08cmoco/vs_release_16k.zip?dl=1 -O vs_release_16k.zip
 unzip vs_release_16k.zip
 cd ../src
 python prep_data.py
