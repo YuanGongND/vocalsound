@@ -146,7 +146,7 @@ pip install -r requirements.txt
 
 ```
 cd data/
-wget https://www.dropbox.com/s/7saoz9lf08cmoco/vs_release_16k.zip?dl=1 -O vs_release_16k.zip
+wget https://www.dropbox.com/s/c5ace70qh1vbyzb/vs_release_16k.zip?dl=0 -O vs_release_16k.zip
 unzip vs_release_16k.zip
 cd ../src
 python prep_data.py
