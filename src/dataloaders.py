@@ -46,7 +46,7 @@ class VSDataset(Dataset):
         self.melbins = self.audio_conf.get('num_mel_bins')
         self.index_dict = make_index_dict(label_csv)
         self.label_num = len(self.index_dict)
-        print('Number of classes is {:d}'.format(self.label_num))
+        #print('Number of classes is {:d}'.format(self.label_num))
 
         self.windows = {'hamming': scipy.signal.hamming, 'hann': scipy.signal.hann, 'blackman': scipy.signal.blackman, 'bartlett': scipy.signal.bartlett}
 
@@ -55,11 +55,11 @@ class VSDataset(Dataset):
         if specaug == True:
             self.freqm = self.audio_conf.get('freqm')
             self.timem = self.audio_conf.get('timem')
-            print('now using following mask: {:d} freq, {:d} time'.format(self.audio_conf.get('freqm'), self.audio_conf.get('timem')))
+            #print('now using following mask: {:d} freq, {:d} time'.format(self.audio_conf.get('freqm'), self.audio_conf.get('timem')))
         self.specaug = specaug
         self.mixup = self.audio_conf.get('mixup')
-        print('now using mix-up with rate {:f}'.format(self.mixup))
-        print('now add rolling and new mixup stategy')
+        #print('now using mix-up with rate {:f}'.format(self.mixup))
+        #print('now add rolling and new mixup stategy')
 
     def _wav2fbank(self, filename, filename2=None):
         # not mix-up

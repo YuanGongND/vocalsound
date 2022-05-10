@@ -122,6 +122,7 @@ def train(audio_model, train_loader, test_loader, args):
         average_precision = np.mean(middle_ps)
         average_recall = np.mean(middle_rs)
 
+        print("---------------------Epoch {:d} Results---------------------".format(epoch))
         print("ACC: {:.6f}".format(acc))
         print("mAP: {:.6f}".format(mAP))
         print("AUC: {:.6f}".format(mAUC))
@@ -131,7 +132,7 @@ def train(audio_model, train_loader, test_loader, args):
         print("train_loss: {:.6f}".format(loss_meter.avg))
         print("valid_loss: {:.6f}".format(valid_loss))
 
-        result[epoch, :] = [mAP, acc, average_precision, average_recall, d_prime(mAUC), loss_meter.avg, valid_loss, cum_mAP, cum_acc, optimizer.param_groups[0]['lr']]
+        result[epoch-1, :] = [mAP, acc, average_precision, average_recall, d_prime(mAUC), loss_meter.avg, valid_loss, cum_mAP, cum_acc, optimizer.param_groups[0]['lr']]
 
         np.savetxt(exp_dir + '/result.csv', result, delimiter=',')
 
@@ -149,7 +150,7 @@ def train(audio_model, train_loader, test_loader, args):
 
         scheduler.step()
 
-        print('number of params groups:' + str(len(optimizer.param_groups)))
+        #print('number of params groups:' + str(len(optimizer.param_groups)))
         print('Epoch-{0} lr: {1}'.format(epoch, optimizer.param_groups[0]['lr']))
 
         with open(exp_dir + '/stats_' + str(epoch) +'.pickle', 'wb') as handle:
