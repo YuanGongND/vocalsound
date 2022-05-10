@@ -141,8 +141,8 @@ class VSDataset(Dataset):
         if self.specaug == True:
             freqm = torchaudio.transforms.FrequencyMasking(self.freqm)
             timem = torchaudio.transforms.TimeMasking(self.timem)
-            fbank = fbank.unsqueeze(0)
             fbank = torch.transpose(fbank, 0, 1)
+            fbank = fbank.unsqueeze(0)
             fbank = freqm(fbank)
             fbank = timem(fbank)
             fbank = fbank.squeeze(0)

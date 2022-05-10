@@ -51,7 +51,7 @@ def train(audio_model, train_loader, test_loader, args):
     print("current #steps=%s, #epochs=%s" % (global_step, epoch))
     print("start training...")
 
-    result = np.zeros([args.n_epochs + 1, 10])
+    result = np.zeros([args.n_epochs, 10])
     audio_model.train()
     while epoch < args.n_epochs + 1:
         begin_time = time.time()
