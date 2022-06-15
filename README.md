@@ -64,9 +64,9 @@ If you plan to reproduce our baseline experiments using our *Google Colab* scrip
 
 You can find (and upload your result to) the vocalsound dataset leaderboard at [paperwithcode](https://paperswithcode.com/dataset/vocalsound).
 
-I also plan to maintain a non-exhaustive leaderborad for 6-class vocalsound classification task. Result should be compared when pretraining dataset and settings are similar.
+We also plan to maintain a non-exhaustive leaderborad for the 6-class vocalsound classification task. Please open a pull request if you want your model being included. Result should be compared when pretraining dataset and settings are similar. 
 
-| Method   | Model                    | Pretrain Dataset                                                                                                                                   | Accuracy | Code Link                                        |
+| Method   | Model                    | Pretrain Dataset                                                                                                                                   | Accuracy | Code                                        |
 |----------|--------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|----------|--------------------------------------------------|
 | [CLAP](https://arxiv.org/abs/2206.04769)     | CNN Audio Encoder + CLIP | 128,010 audio and text pairs from 4 datasets (36,796 pairs from FSD50k, 29,646 pairs from ClothoV2, 44,292 from AudioCaps, 17,276 pairs from MACS) | 97.95    | TBD                                              |
 | [Baseline](https://arxiv.org/abs/2205.03433) | EfficientNet-B0          | None                                                                                                                                               | 90.5     | [link](https://github.com/YuanGongND/vocalsound) |
