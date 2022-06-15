@@ -62,7 +62,7 @@ If you plan to reproduce our baseline experiments using our *Google Colab* scrip
 
 ## Leaderboard
 
-You can find (and upload your result) the vocalsound dataset leaderboard at [paperwithcode](https://paperswithcode.com/dataset/vocalsound).
+You can find (and upload your result to) the vocalsound dataset leaderboard at [paperwithcode](https://paperswithcode.com/dataset/vocalsound).
 
 I also plan to maintain a non-exhaustive leaderborad for 6-class vocalsound classification task. Result should be compared when pretraining dataset and settings are similar.
 
