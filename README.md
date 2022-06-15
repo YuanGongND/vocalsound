@@ -2,6 +2,7 @@
  - [Introduction](#Introduction)
  - [Citing](#Citing)  
  - [Download VocalSound](#Download-VocalSound)
+ - [Leaderboard](#Leaderboard)
  - [Dataset Details](#Dataset-Details)
  - [Baseline Experiment](#Baseline-Experiment)
  - [Contact](#Contact)
@@ -58,6 +59,19 @@ The VocalSound dataset can be downloaded as a single .zip file:
 If you plan to reproduce our baseline experiments using our *Google Colab* script, you do **NOT** need to download it manually, our script will download and process the 16kHz version automatically.
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />The VocalSound dataset is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+
+## Leaderboard
+
+You can find (and upload your result) the vocalsound dataset leaderboard at [paperwithcode](https://paperswithcode.com/dataset/vocalsound).
+
+I also plan to maintain a non-exhaustive leaderborad for 6-class vocalsound classification task. Result should be compared when pretraining dataset and settings are similar.
+
+| Method   | Model                    | Pretrain Dataset                                                                                                                                   | Accuracy | Code Link                                        |
+|----------|--------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|----------|--------------------------------------------------|
+| [CLAP](https://arxiv.org/abs/2206.04769)     | CNN Audio Encoder + CLIP | 128,010 audio and text pairs from 4 datasets (36,796 pairs from FSD50k, 29,646 pairs from ClothoV2, 44,292 from AudioCaps, 17,276 pairs from MACS) | 97.95    | TBD                                              |
+| [Baseline](https://arxiv.org/abs/2205.03433) | EfficientNet-B0          | None                                                                                                                                               | 90.5     | [link](https://github.com/YuanGongND/vocalsound) |
+
+
 
 ## Dataset Details
 
