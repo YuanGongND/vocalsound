@@ -52,7 +52,15 @@ The VocalSound dataset can be downloaded as a single .zip file:
 
 [**VocalSound 44.1kHz Version** (4.5 GB)](https://www.dropbox.com/s/ybgaprezl8ubcce/vs_release_44k.zip?dl=1)
 
+```
+wget -O vocalsound_44k https://www.dropbox.com/s/ybgaprezl8ubcce/vs_release_44k.zip?dl=1
+```
+
 [**VocalSound 16kHz Version** (1.7 GB, used in our baseline experiment)](https://www.dropbox.com/s/c5ace70qh1vbyzb/vs_release_16k.zip?dl=1)
+
+```
+wget -O vocalsound_16k https://www.dropbox.com/s/c5ace70qh1vbyzb/vs_release_16k.zip?dl=1
+```
 
 (Mirror Links) 腾讯微云下载链接: [试听24个样本](https://share.weiyun.com/31910dkK) ｜[16kHz版本](https://share.weiyun.com/JUX8OTMg) ｜[44.1kHz版本](https://share.weiyun.com/JBLbmjs6)
 
