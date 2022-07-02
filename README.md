@@ -45,11 +45,9 @@ Please cite our paper(s) if you find the VocalSound dataset and code useful. The
 ```  
 
 ## Download VocalSound
+The VocalSound dataset can be downloaded as a single .zip file. Click the link to download with a browser *or* use the `wget` command.
 
 [**Sample Recordings** (Listen to it without downloading)](https://drive.google.com/drive/folders/1NGdHO34aTcBY2pFZHoHZKAcfepYV9Wnf?usp=sharing)
-
-***
-The VocalSound dataset can be downloaded as a single .zip file. Click the link to download with a browser *or* use the `wget` command.
 
 [**VocalSound 44.1kHz Version** (4.5 GB)](https://www.dropbox.com/s/ybgaprezl8ubcce/vs_release_44k.zip?dl=1)
 
