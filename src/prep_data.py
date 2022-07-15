@@ -35,6 +35,8 @@ if __name__ == '__main__':
     if args.data_dir == None:
         cur_path = '/'.join(os.getcwd().split('/')[:-1])
         data_dir = cur_path + '/data'
+    else:
+        data_dir = args.data_dir
 
     # for train, validation, test
     json_files = get_immediate_files(data_dir + '/datafiles/')
