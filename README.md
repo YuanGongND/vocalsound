@@ -75,7 +75,7 @@ We also plan to maintain a non-exhaustive leaderborad for the 6-class vocalsound
 
 | Method   | Model                    | Pretrain Dataset                                                                                                                                   | Accuracy | Code                                        |
 |----------|--------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|----------|--------------------------------------------------|
-| [CLAP](https://arxiv.org/abs/2206.04769)     | CNN Audio Encoder + CLIP | 128,010 audio and text pairs from 4 datasets (36,796 pairs from FSD50k, 29,646 pairs from ClothoV2, 44,292 from AudioCaps, 17,276 pairs from MACS) | 97.95    | TBD                                              |
+| [CLAP](https://arxiv.org/abs/2206.04769)     | CNN Audio Encoder + CLIP | 128,010 audio and text pairs from 4 datasets (36,796 pairs from FSD50k, 29,646 pairs from ClothoV2, 44,292 from AudioCaps, 17,276 pairs from MACS) | 97.95    | [link](https://github.com/microsoft/CLAP)                                              |
 | [Baseline](https://arxiv.org/abs/2205.03433) | EfficientNet-B0          | None                                                                                                                                               | 90.5     | [link](https://github.com/YuanGongND/vocalsound) |
 
 
